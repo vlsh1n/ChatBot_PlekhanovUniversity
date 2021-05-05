@@ -3,6 +3,7 @@ from aiogram.dispatcher.filters import Command
 from aiogram.types import InputFile
 
 from keyboards.default import menu
+from keyboards.default import contacts
 from keyboards.inline.schedule import schedule
 from loader import dp
 
@@ -26,3 +27,9 @@ async def map_of_campus(message: types.Message):
     photo_bytes = InputFile(path_or_bytesio='static/карта-базы.png')
     await message.answer('Присылаю карту')
     await message.answer_photo(photo=photo_bytes)
+
+
+# Обработчик кнопки "Полезные контакты". В ответ заменяет основную клавиатуру на клавиатуру с выбором отделов.
+@dp.message_handler(text='Полезные контакты')
+async def general_contacts(message: types.Message):
+    await message.answer(text='Выбери нужный отдел', reply_markup=contacts)
