@@ -1,5 +1,6 @@
 from aiogram import types
 from aiogram.dispatcher.filters import Command
+from aiogram.types import InputFile
 
 from keyboards.default import menu
 from keyboards.inline.schedule import schedule
@@ -17,3 +18,11 @@ async def show_menu(message: types.Message):
 @dp.message_handler(text='Расписание')
 async def main_schedule(message: types.Message):
     await message.answer(text='Выбери нужный день', reply_markup=schedule)
+
+
+# Обработчик кнопки "Карта кампуса". В ответ присылает карту, которая лежит в директории static, в корне проекта.
+@dp.message_handler(text='Карта кампуса')
+async def map_of_campus(message: types.Message):
+    photo_bytes = InputFile(path_or_bytesio='static/карта-базы.png')
+    await message.answer('Присылаю карту')
+    await message.answer_photo(photo=photo_bytes)
