@@ -5,6 +5,7 @@ from keyboards.default import menu
 from keyboards.inline.schedule import schedule
 from loader import dp
 
+
 # При отправке команды /menu, вызывается меню с выбором функций
 @dp.message_handler(Command('menu'))
 async def show_menu(message: types.Message):
@@ -14,5 +15,5 @@ async def show_menu(message: types.Message):
 # Обработчик кнопки "Расписание". В ответ присылает сообщение с просьбой выбрать нужный день и инлайн клавиатуру для
 # перехода по соответствующим дням
 @dp.message_handler(text='Расписание')
-async def raspisanie(message: types.Message):
+async def main_schedule(message: types.Message):
     await message.answer(text='Выбери нужный день', reply_markup=schedule)

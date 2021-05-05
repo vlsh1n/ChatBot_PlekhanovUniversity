@@ -11,11 +11,10 @@ menu = ReplyKeyboardMarkup(keyboard=[
     ],
     [
         KeyboardButton(text='Обратная связь'),
-        KeyboardButton(text='Музыка')
+        KeyboardButton(text='Портфолио организаторов')
     ],
     [
         KeyboardButton(text='История Школы Актива'),
         KeyboardButton(text='Книга жалоб и предложений')
     ]
-
 ])
