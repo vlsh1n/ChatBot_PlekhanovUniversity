@@ -11,6 +11,24 @@ async def category_curators(message: types.Message):
     await message.answer(text='Выбери нужный контакт', reply_markup=contacts_curators)
 
 
+# Обработчик кнопки с категорией Пресса. В ответ присылает список контактов для выбора
+@dp.message_handler(text='Пресс центр')
+async def category_curators(message: types.Message):
+    await message.answer(text='Выбери нужный контакт', reply_markup=contacts_press)
+
+
+# Обработчик кнопки с категорией Снабжения. В ответ присылает список контактов для выбора
+@dp.message_handler(text='Отдел снабжения')
+async def category_curators(message: types.Message):
+    await message.answer(text='Выбери нужный контакт', reply_markup=contacts_prov)
+
+
+# Обработчик кнопки с категорией Техников. В ответ присылает список контактов для выбора
+@dp.message_handler(text='Технический отдел')
+async def category_curators(message: types.Message):
+    await message.answer(text='Выбери нужный контакт', reply_markup=contacts_tech)
+
+
 # Возвращает пользователя в главное меню
 @dp.message_handler(text='В главное меню')
 async def back_to_main_menu(message: types.Message):

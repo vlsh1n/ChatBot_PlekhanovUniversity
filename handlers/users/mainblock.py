@@ -5,6 +5,7 @@ from aiogram.types import InputFile
 from keyboards.default import menu
 from keyboards.default import contacts
 from keyboards.inline.schedule import schedule
+from keyboards.inline.support import support
 from loader import dp
 
 
@@ -33,3 +34,9 @@ async def map_of_campus(message: types.Message):
 @dp.message_handler(text='Полезные контакты')
 async def general_contacts(message: types.Message):
     await message.answer(text='Выбери нужный отдел', reply_markup=contacts)
+
+
+# Обработчик кнопки "Книга жалоб и предложений". В ответ присылает инлайн кнопку с ссылкой на Google форму
+@dp.message_handler(text='Книга жалоб и предложений')
+async def general_contacts(message: types.Message):
+    await message.answer(text='Перейди по ссылке, чтобы оставить свое обращение', reply_markup=support)

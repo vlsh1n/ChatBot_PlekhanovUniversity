@@ -18,8 +18,50 @@ contacts_curators = ReplyKeyboardMarkup(keyboard=[
     ]
 ])
 
-contacts_press = None
+contacts_press = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text='test'),
+        KeyboardButton(text='test'),
+        KeyboardButton(text='test')
+    ],
+    [
+        KeyboardButton(text='test'),
+        KeyboardButton(text='test'),
+        KeyboardButton(text='test')
+    ],
+    [
+        KeyboardButton(text='В главное меню')
+    ]
+])
 
-contacts_prov = None
+contacts_prov = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text='test'),
+        KeyboardButton(text='test'),
+        KeyboardButton(text='test')
+    ],
+    [
+        KeyboardButton(text='test'),
+        KeyboardButton(text='test'),
+        KeyboardButton(text='test')
+    ],
+    [
+        KeyboardButton(text='В главное меню')
+    ]
+])
 
-contacts_tech = None
+contacts_tech = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(text='test'),
+        KeyboardButton(text='test'),
+        KeyboardButton(text='test')
+    ],
+    [
+        KeyboardButton(text='test'),
+        KeyboardButton(text='test'),
+        KeyboardButton(text='test')
+    ],
+    [
+        KeyboardButton(text='В главное меню')
+    ]
+])
