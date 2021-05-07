@@ -8,8 +8,11 @@ contacts = ReplyKeyboardMarkup(keyboard=[
         KeyboardButton(text='Пресс центр')
     ],
     [
-        KeyboardButton(text='Отдел снабжения'),
+        KeyboardButton(text='Отдел планирования и снабжения'),
         KeyboardButton(text='Технический отдел')
+    ],
+    [
+        KeyboardButton(text='Отдел аудиовизуального оснащения')
     ],
     [
         KeyboardButton(text='В главное меню')
