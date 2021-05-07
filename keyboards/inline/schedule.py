@@ -1,4 +1,5 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
 from keyboards.inline.callback_data_schedule import day_callback
 
 schedule = InlineKeyboardMarkup(row_width=1,
@@ -22,10 +23,10 @@ schedule = InlineKeyboardMarkup(row_width=1,
                                         )
                                     ],
                                     [
-                                      InlineKeyboardButton(
-                                          text='День четвертый',
-                                          callback_data='schedule:fourth'
-                                      )
+                                        InlineKeyboardButton(
+                                            text='День четвертый',
+                                            callback_data='schedule:fourth'
+                                        )
                                     ],
                                     [
                                         InlineKeyboardButton(
@@ -34,5 +35,3 @@ schedule = InlineKeyboardMarkup(row_width=1,
                                         )
                                     ]
                                 ])
-
-

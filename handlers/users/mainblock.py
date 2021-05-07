@@ -4,6 +4,7 @@ from aiogram.types import InputFile
 
 from keyboards.default import menu
 from keyboards.default import contacts
+from keyboards.default import feedback_menu
 from keyboards.inline.schedule import schedule
 from keyboards.inline.support import support
 from loader import dp
@@ -40,3 +41,9 @@ async def general_contacts(message: types.Message):
 @dp.message_handler(text='Книга жалоб и предложений')
 async def general_contacts(message: types.Message):
     await message.answer(text='Перейди по ссылке, чтобы оставить свое обращение', reply_markup=support)
+
+
+# Обработчик кнопки "Обратная связь". В ответ присылает клавиатуру с выбором дней для обратной связи
+@dp.message_handler(text='Обратная связь')
+async def general_contacts(message: types.Message):
+    await message.answer(text='Выбери день, чтобы оставить обратную связь', reply_markup=feedback_menu)
