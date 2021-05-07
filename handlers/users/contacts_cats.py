@@ -1,6 +1,6 @@
 from aiogram import types
 
-from keyboards.default import contacts_prov, contacts_tech, contacts_curators, contacts_press, menu
+from keyboards.default import contacts_prov, contacts_tech, contacts_curators, contacts_press, contacts_sound, menu
 
 from loader import dp
 
@@ -18,7 +18,7 @@ async def category_curators(message: types.Message):
 
 
 # Обработчик кнопки с категорией Снабжения. В ответ присылает список контактов для выбора
-@dp.message_handler(text='Отдел снабжения')
+@dp.message_handler(text='Отдел планирования и снабжения')
 async def category_curators(message: types.Message):
     await message.answer(text='Выбери нужный контакт', reply_markup=contacts_prov)
 
@@ -27,6 +27,12 @@ async def category_curators(message: types.Message):
 @dp.message_handler(text='Технический отдел')
 async def category_curators(message: types.Message):
     await message.answer(text='Выбери нужный контакт', reply_markup=contacts_tech)
+
+
+# Обработчик кнопки с категорией Техников. В ответ присылает список контактов для выбора
+@dp.message_handler(text='Отдел аудиовизуального оснащения')
+async def category_curators(message: types.Message):
+    await message.answer(text='Выбери нужный контакт', reply_markup=contacts_sound)
 
 
 # Возвращает пользователя в главное меню
