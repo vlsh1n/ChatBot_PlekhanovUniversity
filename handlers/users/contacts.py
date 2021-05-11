@@ -119,7 +119,7 @@ async def contact(message: types.Message):
 async def contact(message: types.Message):
     photo = InputFile(path_or_bytesio='static/ProfilePhoto/Саркисян Нарек.jpg')
     await bot.send_photo(chat_id=message.from_user.id, photo=photo)
-    await message.answer(text='Саркисян Нарек\n'
+    await message.answer(text='Саркисян Нарек \n'
                               'Игротехник\n'
                               'Номер телефона: +7(918)480-02-07\n'
                               'Инстаграм: instagram.com/nsarkisyan20\n'
