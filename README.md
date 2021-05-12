@@ -2,6 +2,8 @@
 
 <h3> Telegram Bot for student school of Plekhanov Russian University of Economics </h3>
 
+<h4> Find this bot in telegram: @VIIIWABOT </h4>
+
 
 <i>Start file for this bot is 'app.py' at the root directory of project</i>
 
