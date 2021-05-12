@@ -5,6 +5,8 @@ from aiogram.types import InputFile
 from loader import dp, bot
 
 
+# Список хэндлеров, который ловит нажатия по оргам из меню портфолио организаторов. В ответ присылает постер на орга
+
 @dp.message_handler(text='Волошин Владислав CV')
 async def cv_orgs(message: types.Message):
     photo = InputFile(path_or_bytesio='static/cv/Волошин.png')

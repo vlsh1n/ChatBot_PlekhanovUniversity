@@ -29,7 +29,7 @@ async def category_curators(message: types.Message):
     await message.answer(text='Выбери нужный контакт', reply_markup=cv_tech)
 
 
-# Обработчик кнопки с категорией Техников. В ответ присылает список контактов для выбора
+# Обработчик кнопки с категорией Звукарей. В ответ присылает список контактов для выбора
 @dp.message_handler(text='Отдел аудиовизуального оснащения CV')
 async def category_curators(message: types.Message):
     await message.answer(text='Выбери нужный контакт', reply_markup=cv_sound)

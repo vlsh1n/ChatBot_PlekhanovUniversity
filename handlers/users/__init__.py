@@ -8,3 +8,5 @@ from . import schedule_handler
 from . import mainblock
 from . import start
 from . import echo
+
+# Здесь мы регистрируем подгруппы хэндлеров группы users

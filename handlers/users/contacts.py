@@ -5,6 +5,8 @@ from aiogram.types import InputFile
 from loader import dp, bot
 
 
+# Список хэндлеров, которые будут ловить нажатия по кнопкам с именами организаторов и возвращать краткую инфу о них
+
 @dp.message_handler(text='Волошин Владислав')
 async def contact(message: types.Message):
     photo = InputFile(path_or_bytesio='static/ProfilePhoto/Волошин Владислав.JPG')

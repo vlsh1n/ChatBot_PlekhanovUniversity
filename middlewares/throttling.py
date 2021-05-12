@@ -7,6 +7,8 @@ from aiogram.dispatcher.middlewares import BaseMiddleware
 from aiogram.utils.exceptions import Throttled
 
 
+# Класс, который запрещает флуд. При многочисленной отправки одной и той же команды или сообщения, временно блокирует
+# возможность отправлять эту же команду или сообщение
 class ThrottlingMiddleware(BaseMiddleware):
     """
     Simple middleware

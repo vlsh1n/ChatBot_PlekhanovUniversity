@@ -4,6 +4,7 @@ from aiogram.dispatcher.filters.builtin import CommandStart
 from loader import dp
 
 
+# Хэндлер, который обрабатывает команду /start
 @dp.message_handler(CommandStart())
 async def bot_start(message: types.Message):
     await message.answer(f"Привет, {message.from_user.full_name}!\n"
