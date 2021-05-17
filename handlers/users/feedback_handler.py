@@ -17,7 +17,7 @@ async def feedback_day_one(message: types.Message):
         await message.answer(text='Перейди по ссылке ниже, чтобы оставить обратную связь',
                              reply_markup=feedback_keyboard_day1)
     else:
-        await message.answer(text='Прости, обратная связь по первому дню еще недоступна')
+        await message.answer(text='Обратная связь по первому дню станет доступна 20 мая')
 
 
 # Обработчик кнопки обратной связи второго дня,
@@ -28,7 +28,7 @@ async def feedback_day_two(message: types.Message):
         await message.answer(text='Перейди по ссылке ниже, чтобы оставить обратную связь',
                              reply_markup=feedback_keyboard_day2)
     else:
-        await message.answer(text='Прости, обратная связь по второму дню еще недоступна')
+        await message.answer(text='Обратная связь по второму дню станет доступна 21 мая')
 
 
 # Обработчик кнопки обратной связи третьего дня,
@@ -39,7 +39,7 @@ async def feedback_day_three(message: types.Message):
         await message.answer(text='Перейди по ссылке ниже, чтобы оставить обратную связь',
                              reply_markup=feedback_keyboard_day3)
     else:
-        await message.answer(text='Прости, обратная связь по третьему дню еще недоступна')
+        await message.answer(text='Обратная связь по третьему дню станет доступна 22 мая')
 
 
 # Обработчик кнопки общей обратной связи, при запросе не раньше указаной даты, в ответ присылает ссылку на гугл форму
@@ -49,7 +49,7 @@ async def feedback_general(message: types.Message):
         await message.answer(text='Перейди по ссылке ниже, чтобы оставить обратную связь',
                              reply_markup=feedback_keyboard_general)
     else:
-        await message.answer(text='Прости, итоговая обратная связь еще недоступна')
+        await message.answer(text='Итоговая обратная связь станет доступна 23 мая')
 
 
 # Возвращает пользователя в главное меню

@@ -32,7 +32,7 @@ async def map_of_campus(message: types.Message):
 # Обработчик кнопки "Полезные контакты". В ответ заменяет основную клавиатуру на клавиатуру с выбором отделов.
 @dp.message_handler(text='Полезные контакты')
 async def general_contacts(message: types.Message):
-    await message.answer(text='Выбери нужный контакт', reply_markup=contacts)
+    await message.answer(text='Выбери нужный раздел', reply_markup=contacts)
 
 
 # Обработчик кнопки "Портфолио участников". В ответ заменяет основную клавиатуру на клавиатуру с выбором отделов.
