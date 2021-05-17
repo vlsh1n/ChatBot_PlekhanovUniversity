@@ -249,7 +249,7 @@ async def cv_orgs(message: types.Message):
                               'Вконтакте: https://vk.com/v_horin')
 
 
-@dp.message_handler(text='Карасиков Евгений ')
+@dp.message_handler(text='Евгений Карасиков')
 async def cv_orgs(message: types.Message):
     photo = InputFile(path_or_bytesio='static/cv/Карасиков.png')
     await bot.send_photo(chat_id=message.from_user.id, photo=photo)
