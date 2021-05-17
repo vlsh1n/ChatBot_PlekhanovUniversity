@@ -4,15 +4,18 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 # Клавиатура с выбором отдела контактов
 cv = ReplyKeyboardMarkup(keyboard=[
     [
-        KeyboardButton(text='Отдел по работе с участниками CV'),
-        KeyboardButton(text='Пресс центр CV')
+        KeyboardButton(text='Отдел по работе с участниками '),
+        KeyboardButton(text='Пресс центр ')
     ],
     [
-        KeyboardButton(text='Отдел планирования и снабжения CV'),
-        KeyboardButton(text='Технический отдел CV')
+        KeyboardButton(text='Отдел планирования и снабжения '),
+        KeyboardButton(text='Технический отдел ')
     ],
     [
-        KeyboardButton(text='Отдел аудиовизуального оснащения CV')
+        KeyboardButton(text='Отдел аудиовизуального оснащения ')
+    ],
+    [
+        KeyboardButton(text='Карасиков Евгений ')
     ],
     [
         KeyboardButton(text='В главное меню')
