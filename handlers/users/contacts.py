@@ -27,7 +27,7 @@ async def contact(message: types.Message):
 
 @dp.message_handler(text='Начальник отдела благоустройства базы')
 async def contact(message: types.Message):
-    photo = InputFile(path_or_bytesio='static/ProfilePhoto/Карасиков Евгений.jpg')
+    photo = InputFile(path_or_bytesio='static/ProfilePhoto/Третьякова Эля.jpg')
     await bot.send_photo(chat_id=message.from_user.id, photo=photo)
     await message.answer(text='Третьякова Эля\n'
                               'Начальник отдела благоустройства базы\n'
@@ -38,11 +38,10 @@ async def contact(message: types.Message):
 
 @dp.message_handler(text='Начальник отдела работы с участниками')
 async def contact(message: types.Message):
-    photo = InputFile(path_or_bytesio='static/ProfilePhoto/Карасиков Евгений.jpg')
+    photo = InputFile(path_or_bytesio='static/ProfilePhoto/Беседина Елизавета.jpeg')
     await bot.send_photo(chat_id=message.from_user.id, photo=photo)
     await message.answer(text='Беседина Елизавета\n'
                               'Руководитель отдела Кураторов\n'
                               'Номер телефона: +7(905)470-60-26\n'
                               'Инстаграм: https://instagram.com/_elizzaa.__\n'
                               'Вконтакте: https://vk.com/id327156342')
-
