@@ -18,10 +18,8 @@ async def contact(message: types.Message):
                               'Вконтакте: https://vk.com/karas_i_ko')
 
 
-@dp.message_handler(text='Дирекор базы')
+@dp.message_handler(text='Директор базы')
 async def contact(message: types.Message):
-    photo = InputFile(path_or_bytesio='static/ProfilePhoto/Карасиков Евгений.jpg')
-    await bot.send_photo(chat_id=message.from_user.id, photo=photo)
     await message.answer(text='Баланда Евгений Михайлович\n'
                               'Директор базы\n'
                               'Номер телефона: +7(918)399-01-21\n')
